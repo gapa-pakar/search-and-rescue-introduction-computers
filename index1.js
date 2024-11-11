@@ -1148,7 +1148,7 @@ const addVideo = (vidList) => {
     } else {
         setTimeout(function () {
             document.getElementById("instructions-before-video").style.display = "block";
-        }, 2000)
+        }, 3000)
     }
 }
 
