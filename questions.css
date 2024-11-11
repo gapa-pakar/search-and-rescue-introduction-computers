@@ -10,13 +10,13 @@
     box-sizing: border-box;
     position: relative;
     margin: auto;
-    top: 4rem;
+    top: 2rem;
 }
 
 /* Smaller Question Text */
 #connect-question {
     margin-bottom: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     text-align: center;
 }
 
