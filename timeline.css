@@ -93,7 +93,7 @@ html, body {
     color: red;
     position: absolute;
     font-size: 0.6rem;
-    bottom: 2.9rem;
+    top: 2rem;
     left: 50%;
     transform: translateX(-50%);
     display: none;
