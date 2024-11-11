@@ -666,22 +666,6 @@ const schoolDetailsB = {
     evLis28: ["school-next-arrow", "click", "changeSchoolDetailsPart"]
 }
 
-const matachimDetails = {
-    el1: ["div", "structure-details", "matachim-details", "", "page"],
-    img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "matachim-details"],
-    el3: ["div", ["title", "details-title"], "", "יחידת מתכים", "matachim-details"],
-    img4: ["assets/images/matachim.svg", "יחידת מתכים", "", ["details-img", "matachim-img"], "", "matachim-details"],
-    el5: ["div", "details-conteiner", "details-conteiner", "", "matachim-details"],
-    el6: ["div", "subtitle", "", "תפקידה של יחידת מתכים", "details-conteiner"],
-    el7: ["div", "details-text", "", "להגן קרקעית על מתקן 'מתכים' באמצעות יחידותיו וכוחות ת''פ.\nהסד''כ אשר מבצע את ההגנה על היחידה בפועל הוא כוח פלוגתי של אחד הגדודים בחטיבה אשר מתחלף ע''פ גרף התע''מ.\nבשנת 2020 הוקמה תחת גדוד תבור פלוגת ונוס אשר משימתה בחירום היא הגנה על מתכים.", "details-conteiner"],
-    el8: ["div", "closed-card", "closed-card-matachim", "", "details-conteiner"],
-    el9: ["span", "closed-card-title", "", "הידעת?", "closed-card-matachim"],
-    img10: ["assets/images/arrow.svg", "open", "", "closed-card-arrow", "", "closed-card-matachim"],
-    car11: ["matachimCarousel"],
-    evLis12: ["closed-card-matachim", "click", "openCarouselCard"],
-    evLis13: ["close-btn-structure", "click", "closeDetails"]
-}
-
 const gdudimDetails = {
     el1: ["div", "structure-details", "gdudim-details", "", "page"],
     img2: ["assets/images/close-btn.svg", "X", "close-btn-structure", "close-details-btn", "", "gdudim-details"],
@@ -1084,14 +1068,6 @@ const createScreen = (currObject) => {
             createCarousel(window[carouselObject]);
         }
     }
-
-    if (currPage === 3 || currPage === 13 || currPage === 25 || currPage === 28 || currPage === 29 || currPage === 31) {
-        setTimeout(function () {
-            document.getElementById("instructions-before-video").style.display = "block";
-        }, 3000)
-    } else {
-        document.getElementById("instructions-before-video").style.display = "none";
-    }
 }
 
 const createTextElement = (list) => {
@@ -1164,10 +1140,15 @@ const addVideo = (vidList) => {
     document.getElementById(vidList[0]).style.zIndex = 5;
     setTimeout(() => {
         window[`page${currPage}VidFinished`] = true;
+        document.getElementById("instructions-before-video").style.display = "none";
         createVidBnt();
     }, vidList[1]);
     if (window[`page${currPage}VidFinished`]) {
         createVidBnt();
+    } else {
+        setTimeout(function () {
+            document.getElementById("instructions-before-video").style.display = "block";
+        }, 2000)
     }
 }
 

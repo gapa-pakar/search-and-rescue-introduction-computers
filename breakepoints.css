@@ -185,12 +185,6 @@
 
     }
 
-    .st-matachim {
-        width: 2.7rem;
-        top: 9rem;
-        left: 37.5%;
-    }
-
     .st-school {
         width: 4.5rem;
         top: 9rem;
@@ -1104,10 +1098,6 @@
     #school-details > .details-conteiner {
         width: 17rem;
         top: 6rem;
-    }
-
-    .matachim-img {
-        width: 3rem;
     }
 
     #school-details-img {
