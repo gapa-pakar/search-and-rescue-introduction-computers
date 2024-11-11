@@ -1581,8 +1581,7 @@ const openSchoolDetails = () => {
     currDetails = "school-a";
     if (!detailsVisited.includes("school-a")) {
         detailsVisited.push("school-a");
-    }
-    if (schoolDetailsVisited) {
+    } else {
         document.getElementById("close-btn-structure").addEventListener("click", closeDetails);
     }
 }
