@@ -50,8 +50,8 @@ html, body {
     position: absolute;
     top: 8rem;
     left: 50%;
-    width: 34rem;
-    height: 17rem;
+    width: 31rem;
+    height: 14rem;
     transform: translateX(-50%);
     z-index: -1;
 }
