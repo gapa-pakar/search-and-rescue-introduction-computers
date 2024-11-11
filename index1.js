@@ -1146,9 +1146,9 @@ const addVideo = (vidList) => {
     if (window[`page${currPage}VidFinished`]) {
         createVidBnt();
     } else {
-        setTimeout(function () {
+        setTimeout(() => {
             document.getElementById("instructions-before-video").style.display = "block";
-        }, 4000)
+        }, 3000)
     }
 }
 
