@@ -89,16 +89,6 @@ html, body {
     transform: translateX(-50%);
 }
 
-.instructions-before-video {
-    color: red;
-    position: absolute;
-    font-size: 0.6rem;
-    bottom: 2.4rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-}
-
 .timeline-title {
     font-weight: 600;
     text-align: center;

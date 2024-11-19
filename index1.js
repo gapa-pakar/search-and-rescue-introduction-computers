@@ -1041,10 +1041,6 @@ function updateMenuItemState() {
 }
 
 const createScreen = (currObject) => {
-    if (document.getElementById("instructions-before-video").checkVisibility()) {
-        console.log("hello")
-        document.getElementById("instructions-before-video").style.display = "none";
-    }
     let openContentKeys = Object.keys(currObject);
     for (let i = 1; i <= openContentKeys.length; i++) {
         if (openContentKeys[i - 1].includes("el")) {
