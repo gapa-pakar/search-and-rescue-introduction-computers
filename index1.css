@@ -286,7 +286,7 @@ body {
     text-decoration: underline;
     text-decoration-thickness: 0.05rem;
     position: relative;
-    z-index: 10;
+    z-index: 5;
 }
 
 .example-btn {
