@@ -344,8 +344,8 @@ var page28 = {
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"],
     el4: ["div", "roles-text", "", "לאור מאפייני הלחימה במרחב התמרון (בשטח מדינת האויב), המאופיינים במרחב בנוי רווי מטענים ותשתיות תת קרקע ממולכדות, נדרש מענה מבצעי לאיום פגיעה בכוחותינו לאור קריסת מבנה או חלל תת קרקע.\nהכוח שמוכשר לתת מענה בפעולות חילוץ של כוחות מתמרנים של צה''ל מהריסות מבנים במרחב הלחימה, הינם לוחמי החילוץ של חטיבת החילוץ וההדרכה.", "main-roles"],
-    img5: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
-    vid6: ["buildingvid", "0"],
+    vid5: ["buildingvid", "0"],
+    img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
@@ -761,7 +761,7 @@ let dropdownIcon;
 let activeDropdown = null; // Track the currently active dropdown
 let quesVisited = false;
 let currPage = 1;
-let furthestPageVisited = 1;
+let furthestPageVisited = 41;
 let currExpShown = "";
 let currDefShown = ""; // type string
 let currSchoolDetailsShown = "";
@@ -1047,6 +1047,10 @@ function updateMenuItemState() {
 }
 
 const createScreen = (currObject) => {
+    if (document.getElementById("instructions-before-video").checkVisibility()) {
+        console.log("hello")
+        document.getElementById("instructions-before-video").style.display = "none";
+    }
     let openContentKeys = Object.keys(currObject);
     for (let i = 1; i <= openContentKeys.length; i++) {
         if (openContentKeys[i - 1].includes("el")) {
@@ -1145,10 +1149,11 @@ const addVideo = (vidList) => {
         window[`page${currPage}VidFinished`] = true;
         document.getElementById("instructions-before-video").style.display = "none";
         createVidBnt();
+        console.log("vidList: " + vidList[1] + vidList[0])
     }, vidList[1]);
     if (window[`page${currPage}VidFinished`]) {
         createVidBnt();
-    } else {
+    } else if (currPage === 3 || currPage === 13 || currPage === 25 || currPage === 29 || currPage === 31) {
         setTimeout(() => {
             document.getElementById("instructions-before-video").style.display = "block";
         }, 3000)
@@ -2375,7 +2380,7 @@ var nextPage = () => {
                     }
                 }, 4500);
             }, 500);
-        } else if (currPage === 13 || currPage === 25 || currPage >= 29 && currPage <= 31) {
+        } else if (currPage === 13 || currPage === 25 || currPage >= 28 && currPage <= 31) {
             // hello
             videoEnded();
             basicNextPage();
