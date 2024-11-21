@@ -1,4 +1,3 @@
-
 @media only screen and (max-width: 1670px) {
     #def1-exp {
         bottom: 16rem;
@@ -14,11 +13,11 @@
     .st-baf {
         left: 63.3%;
     }
-    
+
     .st-bah {
         left: 84.3%;
     }
-    
+
     .st-school {
         left: 24.1%;
     }
@@ -75,6 +74,7 @@
         width: 12rem;
     }
 }
+
 /* 
 @media only screen and (max-height: 900px) {
     .connect-question-container {
@@ -357,6 +357,39 @@
     }
 } */
 
+@media only screen and (max-height: 700px) {
+
+    html,
+    body {
+        font-size: calc(0.7vh + 0.7vw + 8px);
+        overflow: hidden;
+    }
+
+    #next-btn-3,
+    #next-btn-13,
+    .next-btn-timeline,
+    #next-btn-7,
+    #next-btn-14,
+    #next-btn-15,
+    #next-btn-22,
+    .next-arrow,
+    #finished-structure {
+        bottom: 6rem;
+    }
+
+    #next-btn-11 {
+        bottom: 14rem;
+    }
+
+    .flip-card-container {
+        top: -14rem;
+    }
+
+    #instruction {
+        top: -14rem;
+    }
+}
+
 @media only screen and (max-width: 1400px) {
 
     #sub-title-roles {
@@ -457,8 +490,8 @@
     }
 
     #def2-exp {
-        bottom: 15.5rem;
-        left: 17.5rem;
+        bottom: 7.5rem;
+        left: 34rem;
         width: 12rem;
     }
 
@@ -475,7 +508,7 @@
     }
 
     #def6-exp {
-        bottom: 10.5rem;
+        bottom: 14.5rem;
         right: 13rem;
         width: 18rem;
     }
@@ -487,7 +520,7 @@
     }
 
     #def7-exp {
-        bottom: 10.5rem;
+        bottom: 5.5rem;
         left: 16rem;
         width: 13rem;
     }
@@ -572,97 +605,102 @@
     .emergency-roles {
         top: 15rem;
     }
-    
+
     .roles-img {
         width: 11.2rem;
         height: 7.5rem;
         left: 1rem;
         top: 10.5rem;
     }
-    
+
     .tape {
         width: 1rem;
         top: 9.3rem;
         left: 6.5rem;
     }
-    
+
     .st-bah {
         left: 90%;
     }
-    
+
     .st-baf {
         left: 63.7%;
     }
-    
+
     .st-gdudim {
         left: 48.7%;
     }
-    
+
     .st-school {
         left: 16.4%;
     }
-    
+
     .bahad16text {
         font-size: 0.9rem;
     }
-    
+
     .branch-img {
         height: 4rem;
     }
-    
-    .buildingvid, .daysvid, .abachvid, .batashvid {
+
+    .buildingvid,
+    .daysvid,
+    .abachvid,
+    .batashvid {
         width: 17rem;
         height: 10rem;
         top: 7rem;
         left: 1rem;
     }
-    
-    #next-btn-3, #next-btn-13, .next-btn-timeline {
+
+    #next-btn-3,
+    #next-btn-13,
+    .next-btn-timeline {
         bottom: 2rem;
     }
-    
+
     #next-btn-7 {
         bottom: 3rem;
     }
-    
+
     .structure-details {
         width: 34rem;
         top: 5rem;
     }
-    
+
     .details-conteiner {
         width: 27rem;
     }
-    
+
     #bah-details .details-img {
         width: 4rem;
     }
-    
+
     .next-right {
         left: 28rem;
     }
-    
-    #gdudim-details > .details-conteiner {
+
+    #gdudim-details>.details-conteiner {
         width: 30rem;
     }
-    
+
     #def1-exp {
         bottom: 12rem;
         left: 16rem;
     }
-    
+
     #def2-exp {
         bottom: 16.5rem;
         left: 13.5rem;
         width: 12rem;
     }
-    
+
     #def3-exp {
         bottom: 14rem;
         left: 12rem;
         width: 18rem;
     }
-    
+
     #def4-exp {
         bottom: 19rem;
         left: 15rem;
@@ -679,7 +717,7 @@
         margin-bottom: 0;
     }
 
-}    
+}
 
 @media only screen and (max-width: 1050px) {
     #next-btn-2 {
@@ -693,7 +731,7 @@
     .connect-question-container {
         width: 100%;
     }
-    
+
     .organizing-drop-zone {
         width: 47%;
         padding: 0.5rem 0rem;
@@ -703,7 +741,7 @@
         margin: 0.15rem;
         width: calc(48% - 1rem);
     }
-    
+
     .structure-details {
         top: 4rem;
     }
@@ -816,7 +854,7 @@
         left: 24rem;
     }
 
-    #gdudim-details > .details-conteiner {
+    #gdudim-details>.details-conteiner {
         width: 28rem;
     }
 
@@ -857,7 +895,7 @@
         top: 1rem;
         left: 7rem;
     }
-    
+
     #timeline-ram-img.timeline-symbol-img {
         position: absolute;
         top: 1rem;
@@ -867,7 +905,7 @@
     #timeline-magal-img.timeline-symbol-img {
         height: 4.5rem;
     }
-    
+
     .connect-question-container {
         top: 2.2rem;
     }
@@ -904,7 +942,7 @@
         top: 2rem;
         width: 2.5rem;
     }
-    
+
     .st-bah {
         width: 3rem;
         top: 9rem;
@@ -939,13 +977,14 @@
         height: 19rem;
     }
 
-    
+
     @keyframes hativaSymbolLarger {
         0% {
             width: 3rem;
             top: 1rem;
             left: 1rem;
-        } 
+        }
+
         100% {
             width: 9rem;
             top: 50%;
@@ -960,7 +999,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-        } 
+        }
+
         100% {
             transform: translate(0%, 0%);
             width: 3rem;
@@ -1005,8 +1045,9 @@
     .branch-img {
         height: 2rem;
     }
-    
-    .connect-year-container, .connect-event-container {
+
+    .connect-year-container,
+    .connect-event-container {
         width: 22rem;
         position: relative;
         right: 1rem;
@@ -1057,7 +1098,7 @@
         height: 8.5rem;
         width: 20rem;
     }
-    
+
     .st-bah {
         width: 3.4rem;
     }
@@ -1095,7 +1136,7 @@
         width: 17rem;
     }
 
-    #school-details > .details-conteiner {
+    #school-details>.details-conteiner {
         width: 17rem;
         top: 6rem;
     }
@@ -1108,15 +1149,21 @@
         left: 18rem;
     }
 
-    #gdudim-details > .details-conteiner {
+    #gdudim-details>.details-conteiner {
         width: 24rem;
     }
 
-    .structure-details-gdud-shahar, .structure-details-gdud-tavor, .structure-details-gdud-kedem, .structure-details-gdud-ram {
+    .structure-details-gdud-shahar,
+    .structure-details-gdud-tavor,
+    .structure-details-gdud-kedem,
+    .structure-details-gdud-ram {
         width: 6rem;
     }
 
-    .structure-details-gdud-shahar-exp, .structure-details-gdud-tavor-exp, .structure-details-gdud-kedem-exp, .structure-details-gdud-ram-exp {
+    .structure-details-gdud-shahar-exp,
+    .structure-details-gdud-tavor-exp,
+    .structure-details-gdud-kedem-exp,
+    .structure-details-gdud-ram-exp {
         width: 15rem;
         top: 1.4rem;
     }
@@ -1266,11 +1313,11 @@
         width: 22rem;
     }
 
-    #school-details > .details-title {
+    #school-details>.details-title {
         font-size: 1.3rem;
     }
 
-    #school-details > .details-conteiner {
+    #school-details>.details-conteiner {
         width: 12rem;
         top: 6rem;
     }
@@ -1307,8 +1354,8 @@
     body {
         left: 0rem;
         position: relative;
-    }  
-    
+    }
+
     .main-title {
         font-size: 2rem;
     }
