@@ -1353,8 +1353,6 @@ const createVidBnt = () => {
     }
 }
 
-
-
 const createComplaxTimelineBtn = () => {
     if (!finishButtonAdded) {
         finishButtonAdded = true;
@@ -1640,7 +1638,6 @@ const gdudimDetailsNext = () => {
             gdudimExpAnim(gdudRam, ramExp, gdudShahar, shaharExp);
         }
     }
-
 }
 
 const gdudimExpAnim = (currGdud, currExp, nextGdud, nextExp) => {
@@ -1681,7 +1678,6 @@ const gdudimExpAnim = (currGdud, currExp, nextGdud, nextExp) => {
     }
 }
 
-
 var closeDetails = () => {
     if (currDetails !== "hativa" && currDetails !== "gdudim") {
         document.querySelector(".close-card-button").removeEventListener("click", closeCarouselCard);
@@ -1702,7 +1698,6 @@ var closeDetails = () => {
             }
         }
     }
-
 }
 
 // questions
@@ -1862,7 +1857,6 @@ const chooseNextButton = () => {
     } else {
         chooseCheckAnswers(); // Check answers if not finished
     }
-
 }
 
 // Handle card selection and deselection
@@ -1973,7 +1967,6 @@ function completeSentenceAllowDrop(event) {
 function completeSentenceDrag(event) {
     event.dataTransfer.setData('text', event.target.id); // Store the word ID being dragged
 }
-
 
 const completeSentenceDrop = (event) => {
     event.preventDefault();
