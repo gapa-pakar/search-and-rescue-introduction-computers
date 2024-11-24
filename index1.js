@@ -269,7 +269,6 @@ var page21 = {
     el7: ["button", "", "american-check-btn", "בדיקה", "american-question-container"],
     func8: ["americanHandleSelectedAnswer"],
     evLis9: ["american-check-btn", "click", "checkAmericanMultipulChoice"]
-
 }
 
 var page22 = {
@@ -344,8 +343,8 @@ var page28 = {
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "חילוץ בסיוע לתמרון", "main-roles"],
     el4: ["div", "roles-text", "", "לאור מאפייני הלחימה במרחב התמרון (בשטח מדינת האויב), המאופיינים במרחב בנוי רווי מטענים ותשתיות תת קרקע ממולכדות, נדרש מענה מבצעי לאיום פגיעה בכוחותינו לאור קריסת מבנה או חלל תת קרקע.\nהכוח שמוכשר לתת מענה בפעולות חילוץ של כוחות מתמרנים של צה''ל מהריסות מבנים במרחב הלחימה, הינם לוחמי החילוץ של חטיבת החילוץ וההדרכה.", "main-roles"],
-    vid5: ["buildingvid", "0"],
-    img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
+    img5: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
+    vid6: ["buildingvid", "0"],
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
@@ -363,8 +362,8 @@ var page30 = {
     el2: ["div", "title", "", "תפקידים מרכזיים", "main-roles"],
     el3: ["div", "subtitle", "", "אב''כ", "main-roles"],
     el4: ["div", "roles-text", "", "לגדודי החטיבה כשירות לטפל באירועים כימיים בעורף, טיהור המוקד הנגוע ופינוי האוכלוסייה עפ''י צורך.\nהלוחמים והלוחמות בגדוד מתמקצעים ביכולות השונות הנדרשות לטיפול באירוע כה מורכב: גילוי וזיהוי מוקד הזיהום, טיהור השטח הנגוע, טיהור בני אדם וכלי רכב היוצאים מהאזור הנגוע ועוד. כל זאת על מנת שיוכלו לפעול ביעילות ולהציל חיים בזמן הקצר ביותר.", "main-roles"],
-    vid5: ["abachvid", "0"],
-    img6: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
+    img5: ["assets/images/arrow.svg", "המשך", "roles-next-arrow", "next-arrow", "", "main-roles"],
+    vid6: ["abachvid", "0"],
     evLis7: ["roles-next-arrow", "click", "nextPage"]
 }
 
@@ -2021,6 +2020,7 @@ const completeSentenceCheckCompletion = () => {
 
 var organizingDragAndDrop = () => {
     organizingAllFilled = false;
+    organizingSuccessfulDrops = [];
     organizingDropZones = document.querySelectorAll('.organizing-drop-zone');
     organizingNextButton = document.getElementById('organizing-next-btn');
     document.querySelectorAll('.organizing-word').forEach(organizingWord => {
@@ -2378,7 +2378,7 @@ var restart = () => {
     currExpShown = "";
     currDefShown = ""; // type string
     currSchoolDetailsShown = "";
-    complexBranchesVisited = [];
+    // complexBranchesVisited = [];
     currDetails = "";
     currPageEvLis = [];
     createScreen(openScreenContent);
